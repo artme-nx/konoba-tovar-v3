@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index,follow" />
+<script>document.documentElement.classList.add('js')</script>
+<title>Konoba Tovar — domaća dalmatinska kuhinja, Zadar | Roštilj, peka i strpljenje</title>
+<meta name="description" content="Konoba Tovar u Zadru — domaća dalmatinska kuhinja bez žurbe: roštilj, peka, kruh ispod čripnje i maslinovo ulje. Stara kuhinja nazvana po strpljivom tovaru. Rezervirajte stol." />
+<link rel="canonical" href="https://artme-nx.github.io/konoba-tovar-v3/" />
+
+<meta property="og:type" content="restaurant" />
+<meta property="og:title" content="Konoba Tovar — Zadar" />
+<meta property="og:description" content="Domaća dalmatinska kuhinja bez žurbe: roštilj, peka i kruh ispod čripnje. Nazvana po strpljivom tovaru." />
+<meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=70" />
+<meta property="og:url" content="https://artme-nx.github.io/konoba-tovar-v3/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://images.unsplash.com" />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Konoba Tovar",
+  "description": "Domaća dalmatinska konoba u Zadru: roštilj, peka, kruh ispod čripnje i maslinovo ulje; kuhinja bez žurbe nazvana po strpljivom tovaru.",
+  "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=70",
+  "@id": "https://artme-nx.github.io/konoba-tovar-v3/",
+  "url": "https://artme-nx.github.io/konoba-tovar-v3/",
+  "servesCuisine": ["Dalmatinska", "Mediteranska", "Domaća"],
+  "priceRange": "€€",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3",
+    "reviewCount": "131"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Zadar",
+    "addressLocality": "Zadar",
+    "addressRegion": "Zadarska županija",
+    "postalCode": "23000",
+    "addressCountry": "HR"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "11:00", "closes": "23:00"
+  }]
+}
+</script>
+<!-- TODO[klijent]: potvrditi telefon, točnu adresu/kbr, geo koordinate i stvarno radno vrijeme za JSON-LD. Ocjena 4.3/131 preuzeta s TripAdvisora. -->
+
+<style>
+:root{
+  /* Paleta IZVEDENA iz imena "Tovar" + Zadra (vidi DESIGN.md) */
+  --bg:       #ECE3D2;  /* zadarski kamen / slama, pigmentiran topli */
+  --bg-alt:   #E0D4BC;  /* suha slama */
+  --bg-deep:  #281F18;  /* pečena zemlja / ognjište */
+  --ink:      #2A2018;  /* tamna pržena zemlja, topli near-black */
+  --ink-soft: #46392C;
+  --mid:      #6B5E46;  /* maslinasto-slamnata siva */
+  --accent:   #B25B36;  /* terakota / zadarska crvenica */
+  --accent-2: #8A4327;  /* tamnija terakota */
+  --olive:    #65663A;  /* maslina, štedljivo */
+  --gold:     #B0883B;  /* žito/slama naglasak */
+  --line:     rgba(42,32,24,.16);
+  --line-soft:rgba(42,32,24,.08);
+
+  --font-display:'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-body:'Work Sans', system-ui, -apple-system, sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --wrap:1280px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative}
+/* grain overlay (heritage texture) */
+body::after{content:"";position:fixed;inset:0;z-index:7000;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accent);color:#fff}
+
+h1,h2,h3,.disp{font-family:var(--font-display);font-weight:500;line-height:1.06;letter-spacing:0;text-wrap:balance}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-2)}
+.lead{font-family:var(--font-display);font-size:clamp(22px,2.7vw,32px);line-height:1.4;font-weight:400;color:var(--ink-soft);text-wrap:pretty;font-style:italic}
+p{text-wrap:pretty}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 30px}
+.sec{padding:clamp(74px,11vw,142px) 0}
+
+.cursor{position:fixed;top:0;left:0;width:10px;height:10px;border-radius:50%;background:var(--accent);margin:-5px 0 0 -5px;pointer-events:none;z-index:9000;mix-blend-mode:multiply;will-change:transform;transition:background-color .3s}
+.cursor.big{background:rgba(178,91,54,.18)}
+@media(hover:none){.cursor{display:none}}
+
+header{position:fixed;inset:0 0 auto 0;z-index:1000;padding:16px 0;transition:background .5s var(--ease),box-shadow .5s var(--ease)}
+header.solid{background:rgba(236,227,210,.92);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line-soft)}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:var(--font-display);font-size:25px;letter-spacing:.01em;color:var(--ink);font-weight:600}
+.brand i{font-style:italic;font-weight:500;color:var(--accent)}
+.menu{display:flex;gap:32px;align-items:center}
+.menu a.lnk{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);transition:color .3s}
+.menu a.lnk:hover{color:var(--accent)}
+.btn{display:inline-block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:13px 24px;border:1px solid var(--accent);color:var(--accent);border-radius:2px;transition:.35s var(--ease)}
+.btn:hover{background:var(--accent);color:#fff}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;width:30px}
+.burger span{height:1.5px;background:var(--ink);transition:.3s}
+
+/* HERO — editorial kronika */
+.hero{padding:clamp(118px,16vw,168px) 0 clamp(40px,6vw,72px)}
+.hero-head{max-width:920px}
+.hero h1{font-size:clamp(48px,8vw,108px);font-weight:500;letter-spacing:-.01em;color:var(--ink)}
+.hero h1 .it{font-style:italic;color:var(--accent)}
+.hero-tag{font-family:var(--font-display);font-style:italic;font-size:clamp(20px,2.6vw,28px);color:var(--ink-soft);margin-top:20px;max-width:34ch}
+.hero-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:clamp(40px,5vw,64px)}
+.hero-grid figure{overflow:hidden;border-radius:3px;margin:0}
+.hero-grid img{width:100%;height:100%;object-fit:cover;filter:sepia(.18) saturate(.95) contrast(1.03)}
+.hero-grid figure:nth-child(1){aspect-ratio:3/4}
+.hero-grid figure:nth-child(2){aspect-ratio:3/4;margin-top:34px}
+.hero-grid figure:nth-child(3){aspect-ratio:3/4}
+.hero-grid figure:nth-child(4){aspect-ratio:3/4;margin-top:34px}
+
+.js [data-reveal]{opacity:0;transform:translateY(28px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.js [data-reveal].in{opacity:1;transform:none}
+.js .reveal-clip{clip-path:inset(100% 0 0 0);transition:clip-path 1.3s var(--ease)}
+.js .reveal-clip.in{clip-path:inset(0% 0 0 0)}
+
+/* botanical divider */
+.bot{display:flex;align-items:center;gap:18px;justify-content:center;color:var(--olive);margin:0 auto}
+.bot::before,.bot::after{content:"";height:1px;width:80px;background:var(--line)}
+
+.manifest{text-align:center}
+.manifest .lead{max-width:24ch;margin:24px auto 0;font-size:clamp(26px,3.6vw,44px);line-height:1.3;color:var(--ink);font-style:italic}
+.manifest p.body{max-width:60ch;margin:28px auto 0;color:var(--ink-soft)}
+
+.head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.head-row h2{font-size:clamp(38px,5.4vw,68px)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 76px}
+.mi{padding:22px 0;border-bottom:1px solid var(--line-soft);display:grid;grid-template-columns:1fr auto;gap:5px 18px;align-items:baseline}
+.mi h3{font-size:23px;font-weight:600;font-family:var(--font-display)}
+.mi .pr{font-family:var(--font-display);font-size:20px;color:var(--accent-2);white-space:nowrap}
+.mi p{grid-column:1/-1;font-size:14.5px;color:var(--mid);line-height:1.6;margin-top:2px}
+.mnote{margin-top:32px;font-size:14px;color:var(--mid);font-style:italic;font-family:var(--font-display)}
+
+.split{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(34px,6vw,92px);align-items:center}
+.split.rev .txt{order:2}
+.split .ph{overflow:hidden;border-radius:3px}
+.split .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:sepia(.16) saturate(.96) contrast(1.03);will-change:transform}
+.split h2{font-size:clamp(32px,4.6vw,58px);margin:18px 0 22px}
+.split p{color:var(--ink-soft);margin-bottom:16px}
+.sign{font-family:var(--font-display);font-style:italic;font-size:23px;color:var(--accent-2);margin-top:8px}
+
+.dark{background:var(--bg-deep);color:#E2D7C3}
+.dark .eyebrow{color:var(--gold)}
+.dark h2{color:#fff;font-size:clamp(34px,5vw,62px)}
+.dark .lead{color:#D2C6B0}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:58px}
+.feat-grid .it{padding-top:22px;border-top:1px solid rgba(255,255,255,.16)}
+.feat-grid .it h3{color:#fff;font-size:25px;margin-bottom:10px;font-family:var(--font-display)}
+.feat-grid .it p{color:#AEA288;font-size:14.5px}
+
+.dest-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(34px,6vw,88px);align-items:center}
+.dest .ph img{width:100%;aspect-ratio:5/4;object-fit:cover;filter:sepia(.14) saturate(.96) contrast(1.03)}
+.dest h2{font-size:clamp(32px,4.6vw,58px);margin:16px 0 22px}
+.dest p{color:var(--ink-soft);margin-bottom:16px}
+.stat{display:flex;gap:42px;margin-top:30px;flex-wrap:wrap}
+.stat .s b{font-family:var(--font-display);font-size:42px;font-weight:600;color:var(--accent);display:block;line-height:1}
+.stat .s span{font-size:12px;letter-spacing:.06em;color:var(--mid);text-transform:uppercase}
+
+.gal{columns:3;column-gap:14px}
+.gal a{display:block;margin-bottom:14px;overflow:hidden;border-radius:3px;break-inside:avoid}
+.gal img{width:100%;filter:sepia(.26) saturate(.9) contrast(1.04);transition:transform .9s var(--ease),filter .6s}
+.gal a:hover img{transform:scale(1.05);filter:sepia(0) saturate(1) contrast(1)}
+
+.contact{background:var(--bg-alt)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,80px)}
+.contact h2{font-size:clamp(34px,5vw,60px);margin-bottom:24px}
+.info-row{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line-soft)}
+.info-row .k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);min-width:116px;padding-top:3px}
+.info-row .v{font-size:17px;color:var(--ink)}
+.info-row .v a:hover{color:var(--accent-2)}
+.map{border-radius:3px;overflow:hidden;box-shadow:0 14px 40px -28px rgba(42,32,24,.6)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block;filter:sepia(.12) saturate(.9)}
+.cta-band{margin-top:14px}.cta-band .btn{padding:16px 30px;font-size:12.5px}
+
+footer{background:var(--bg-deep);color:#C2B69E;padding:70px 0 38px}
+.foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:flex-start;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-top .brand{color:#fff;font-size:30px}.foot-top .brand i{color:var(--gold)}
+.foot-links{display:flex;gap:30px;flex-wrap:wrap}
+.foot-links a{font-size:13px;color:#AEA288;transition:color .3s}.foot-links a:hover{color:var(--gold)}
+.foot-bot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:26px;font-size:12px;color:#8E826A}
+
+.mobile{position:fixed;inset:0;z-index:1500;background:var(--bg-deep);transform:translateY(-100%);transition:transform .55s var(--ease);display:flex;flex-direction:column;justify-content:center;padding:40px;gap:8px}
+.mobile.open{transform:none}
+.mobile a{font-family:var(--font-display);font-size:34px;color:#E2D7C3;padding:8px 0}.mobile a:hover{color:var(--gold)}
+.mclose{position:absolute;top:26px;right:28px;font-size:30px;color:#E2D7C3;cursor:pointer;line-height:1}
+
+@media(max-width:900px){
+  .menu .lnk,.menu .btn{display:none}.burger{display:flex}
+  .hero-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .hero-grid figure:nth-child(2),.hero-grid figure:nth-child(4){margin-top:0}
+  .menu-grid,.split,.dest-grid,.contact-grid{grid-template-columns:1fr}
+  .split.rev .txt{order:0}.split .ph img{aspect-ratio:16/11}
+  .feat-grid{grid-template-columns:1fr;gap:0}
+  .gal{columns:2}
+}
+@media(max-width:520px){.gal{columns:1}.stat{gap:26px}.hero-grid{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.01ms!important}
+  .js [data-reveal]{opacity:1;transform:none}.js .reveal-clip{clip-path:none}
+}
+</style>
+</head>
+<body>
+<div class="cursor" id="cur"></div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand">Konoba <i>Tovar</i></a>
+    <nav class="menu">
+      <a class="lnk" href="#prica">Priča</a>
+      <a class="lnk" href="#kuhinja">Kuhinja</a>
+      <a class="lnk" href="#tovar">Zašto Tovar</a>
+      <a class="lnk" href="#zadar">Zadar</a>
+      <a class="lnk" href="#kontakt">Kontakt</a>
+      <a class="btn" href="#kontakt">Rezerviraj stol</a>
+      <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile" id="mobile">
+  <span class="mclose" id="mclose">&times;</span>
+  <a href="#prica">Priča</a><a href="#kuhinja">Kuhinja</a><a href="#tovar">Zašto Tovar</a>
+  <a href="#zadar">Zadar</a><a href="#kontakt">Kontakt &amp; rezervacije</a>
+</div>
+
+<!-- HERO editorial kronika -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-head">
+      <p class="eyebrow" data-reveal>Zadar · Domaća dalmatinska kuhinja</p>
+      <h1 data-split>Sporo, pošteno, <span class="it">po našu.</span></h1>
+      <p class="hero-tag" data-reveal>Konoba nazvana po tovaru, strpljivoj životinji stare Dalmacije. Kuhamo kako se nekad jelo: roštilj, peka i kruh koji čeka svoje vrijeme.</p>
+    </div>
+    <div class="hero-grid">
+      <figure data-reveal><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=72" alt="Domaći kruh sa žitnim klasom na kamenom stolu" width="700" height="933" loading="eager" fetchpriority="high"></figure>
+      <figure data-reveal><img src="https://images.unsplash.com/photo-1447279506476-3faec8071eee?auto=format&fit=crop&w=700&q=72" alt="Ruke koje rade domaću tjesteninu, brašno na rukama" width="700" height="933" loading="eager"></figure>
+      <figure data-reveal><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=72" alt="Meso s roštilja na daski s rajčicom i mladim krumpirom" width="700" height="933" loading="lazy"></figure>
+      <figure data-reveal><img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=700&q=72" alt="Boca domaćeg maslinovog ulja uz grančicu masline" width="700" height="933" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFEST -->
+<section class="sec manifest" id="prica">
+  <div class="wrap">
+    <div class="bot" data-reveal>&#10047;</div>
+    <p class="eyebrow" data-reveal style="margin-top:22px">Naša priča</p>
+    <p class="lead" data-reveal>Dobra se stvar ne može požuriti. Ni tovar, ni peka, ni gost.</p>
+    <p class="body" data-reveal>Konoba Tovar stara je zadarska adresa za one koji znaju da najbolji zalogaj traži vrijeme. Meso ide na žar polako, kruh se peče ispod čripnje, a juha krčka cijelo jutro. Ništa se tu ne ubrzava, baš kao što se ni tovar nije dao požuriti uz kamenu uzbrdicu. <!-- TODO[klijent]: potvrditi godinu osnutka, ime obitelji i tko danas vodi kuhinju; tekst je u duhu imena. --></p>
+  </div>
+</section>
+
+<!-- KUHINJA -->
+<section class="sec" id="kuhinja" style="background:var(--bg-alt)">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <p class="eyebrow" data-reveal>S roštilja i ispod peke</p>
+        <h2 data-split>Domaća karta</h2>
+      </div>
+      <p class="lead" data-reveal style="max-width:34ch;font-size:clamp(18px,2vw,22px);font-style:normal;font-family:var(--font-body)">Jednostavna jela starog kraja, spremljena bez prečaca. Ovo najradije iznosimo.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="mi" data-reveal><h3>Janjetina ispod peke</h3><span class="pr">24 €</span><p>Cijelo poslijepodne pod čripnjom, s krumpirom koji upije sve sokove. Naručuje se ranije.</p></div>
+      <div class="mi" data-reveal><h3>Miješano meso s roštilja</h3><span class="pr">19 €</span><p>Ćevapi, vratina i kobasica s domaćeg gospodarstva, uz ajvar i mladi luk.</p></div>
+      <div class="mi" data-reveal><h3>Pašticada s njokima</h3><span class="pr">17 €</span><p>Govedina marinirana tri dana u prošeku i začinu, polako kuhana do mekoće.</p></div>
+      <div class="mi" data-reveal><h3>Riba na gradele</h3><span class="pr">po ulovu</span><p>Što je s placa donijela jutarnja barka, pečeno na žaru uz maslinovo ulje i blitvu.</p></div>
+      <div class="mi" data-reveal><h3>Domaći kruh ispod čripnje</h3><span class="pr">5 €</span><p>Pečen u vlastitoj peći, hrskave kore; dolazi topao uz svaki stol.</p></div>
+      <div class="mi" data-reveal><h3>Fritule i rožata</h3><span class="pr">7 €</span><p>Slatki kraj po starinski, uz čašicu domaće rakije. <!-- TODO[klijent]: uskladiti jela i cijene s aktualnom kartom. --></p></div>
+    </div>
+    <p class="mnote" data-reveal>Vino iz okolnih zadarskih i ravnokotarskih podruma, toči se i na bukaru. Veće društvo i peku najavite dan ranije.</p>
+  </div>
+</section>
+
+<!-- ZAŠTO TOVAR (simbol) -->
+<section class="sec split" id="tovar">
+  <div class="wrap split rev">
+    <div class="ph"><img class="par" src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1000&q=74" alt="Domaći stol i zajedništvo uz objed, dijeljenje jela bez žurbe" width="1000" height="1250" loading="lazy"></div>
+    <div class="txt">
+      <p class="eyebrow" data-reveal>Zašto baš Tovar</p>
+      <h2 data-reveal>Strpljenje koje<br>se može pojesti</h2>
+      <p data-reveal>Tovar je stoljećima bio radna snaga dalmatinskih otoka i zaleđa: nosio je kamen, drva i bačve uz najstrmije puteve, mirno i bez žurbe. Za nas je on simbol svega što cijenimo, ustrajnosti, skromnosti i poštenog rada koji se ne vidi odmah, ali se osjeti u rezultatu.</p>
+      <p data-reveal>Zato nosi naše ime. Sve ostalo na stolu samo je nastavak te iste filozofije.</p>
+      <p class="sign" data-reveal>— polako se dalje stiže</p>
+      <!-- TODO[klijent]: ovdje dodati STVARNU fotografiju tovara (magarca) ili konobe; trenutna slika je privremeni heritage motiv. NE koristiti drugu životinju. -->
+    </div>
+  </div>
+</section>
+
+<!-- PEKA feature -->
+<section class="sec split" id="peka">
+  <div class="wrap split">
+    <div class="ph"><img class="par" src="https://images.unsplash.com/photo-1485921325833-c519f76c4927?auto=format&fit=crop&w=1000&q=74" alt="Jelo pečeno u tavi, domaća dalmatinska priprema" width="1000" height="1250" loading="lazy"></div>
+    <div class="txt">
+      <p class="eyebrow" data-reveal>Vatra i čripnja</p>
+      <h2 data-reveal>Okus koji<br>daje samo vrijeme</h2>
+      <p data-reveal>Peka nije recept, nego strpljenje. Žeravica odozdo i odozgo, teški poklopac, i nekoliko sati tijekom kojih se ništa ne otvara. Meso i krumpir razmijene sokove dok ne postanu jedno.</p>
+      <p data-reveal>Zato je tražimo unaprijed: dobra peka ne trpi žurbu, kao ni dobar gost.</p>
+      <p class="sign" data-reveal>— kako se kuhalo i prije nas</p>
+    </div>
+  </div>
+</section>
+
+<!-- DARK PRINCIPLES -->
+<section class="sec dark" id="nacela">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Na čemu ostajemo</p>
+    <h2 data-split style="max-width:18ch">Tri stvari koje se kod nas ne mijenjaju</h2>
+    <div class="feat-grid">
+      <div class="it" data-reveal><h3>Domaća nabava</h3><p>Meso s okolnih gospodarstava, riba s placa, ulje i vino iz susjedstva. Poznajemo svakog tko nam dostavlja.</p></div>
+      <div class="it" data-reveal><h3>Bez prečaca</h3><p>Peka, žar i dugo kuhanje. Ne ubrzavamo ono što vrijeme radi bolje od nas.</p></div>
+      <div class="it" data-reveal><h3>Pun tanjur</h3><p>Porcije starog kraja i cijena bez iznenađenja. Od konobe se izlazi sit i miran.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ZADAR -->
+<section class="sec dest" id="zadar">
+  <div class="wrap dest-grid">
+    <div class="ph"><img class="reveal-clip" src="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?auto=format&fit=crop&w=1100&q=74" alt="Kamene mediteranske kuće uz more u zadarskom kraju" width="1100" height="880" loading="lazy"></div>
+    <div class="txt">
+      <p class="eyebrow" data-reveal>Zadar</p>
+      <h2 data-reveal>Grad kamena,<br>mora i mira</h2>
+      <p data-reveal>Zadar je grad starih kamenih ulica, morskih orgulja i zalazaka zbog kojih se zastaje. Konoba Tovar dio je tog ritma: mjesto kamo se dolazi sjesti, ne projuriti. Nakon šetnje poluotokom ili povratka s otoka, kod nas se dan privodi kraju kako treba.</p>
+      <p data-reveal>Lako nas pronađete, a teško zaboravite; mirisom peke i toplinom domaćeg stola.</p>
+      <div class="stat">
+        <div class="s" data-reveal><b data-count="4" data-deci="1">0</b><span>ocjena gostiju</span></div>
+        <div class="s" data-reveal><b data-count="131">0</b><span>recenzija</span></div>
+        <div class="s" data-reveal><b data-count="0">0</b><span>prečaca u kuhinji</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIJA -->
+<section class="sec" id="galerija" style="padding-top:0">
+  <div class="wrap">
+    <div class="head-row" style="margin-bottom:34px">
+      <h2 data-split>Sa stola</h2>
+      <p class="lead" data-reveal style="max-width:30ch;font-size:clamp(17px,1.9vw,21px)">Žar, kruh i domaće ulje; ono što se ne fotografira nego pojede.</p>
+    </div>
+    <div class="gal">
+      <a data-reveal><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=70" alt="Domaći dalmatinski stol s jelom i vinom" width="800" height="1000" loading="lazy"></a>
+      <a data-reveal><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=70" alt="Riba i meso s gradela u dalmatinskoj konobi" width="800" height="560" loading="lazy"></a>
+      <a data-reveal><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=70" alt="Tanjur domaće tjestenine s povrćem i maslinovim uljem" width="800" height="1000" loading="lazy"></a>
+      <a data-reveal><img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=800&q=70" alt="Daska sa svježim povrćem i namirnicama za pripremu" width="800" height="560" loading="lazy"></a>
+      <a data-reveal><img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=70" alt="Stoka s okolnih gospodarstava u zlatno predvečerje, domaća nabava" width="800" height="600" loading="lazy"></a>
+      <a data-reveal><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=70" alt="Tanjur ribe s povrćem, domaća priprema" width="800" height="600" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="sec contact" id="kontakt">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow" data-reveal>Rezervacije</p>
+      <h2 data-reveal>Dođite na objed</h2>
+      <p data-reveal style="color:var(--ink-soft);max-width:42ch;margin-bottom:8px">Za peku i veće društvo javite se dan ranije. Sve ostalo, slobodno svratite; uvijek se nađe mjesta za još jednog gosta.</p>
+      <div class="info-row" data-reveal><div class="k">Telefon</div><div class="v"><!-- TODO[klijent]: unijeti stvarni telefon (nije pronađen u bazi). --><span style="color:var(--mid)">na upit / putem društvenih mreža</span></div></div>
+      <div class="info-row" data-reveal><div class="k">Adresa</div><div class="v">Zadar · 23000<br><span style="color:var(--mid);font-size:14px"><!-- TODO[klijent]: potvrditi ulicu i kućni broj. -->stari grad / okolica</span></div></div>
+      <div class="info-row" data-reveal><div class="k">Radno vrijeme</div><div class="v">Svaki dan 11:00 – 23:00 <span style="color:var(--mid);font-size:14px">(sezona)</span><br><span style="color:var(--mid);font-size:13px"><!-- TODO[klijent]: potvrditi dane i zimski raspored. -->izvan sezone po dogovoru</span></div></div>
+      <div class="cta-band" data-reveal><a class="btn" href="#galerija">Pogledaj galeriju</a></div>
+    </div>
+    <div class="map" data-reveal>
+      <iframe src="https://www.google.com/maps?q=Zadar,%20Croatia&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokacija — Konoba Tovar, Zadar"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="#top" class="brand" style="font-family:var(--font-display)">Konoba <i>Tovar</i></a>
+      <div class="foot-links">
+        <a href="#prica">Priča</a><a href="#kuhinja">Kuhinja</a><a href="#tovar">Zašto Tovar</a>
+        <a href="#zadar">Zadar</a><a href="#kontakt">Rezervacije</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr"></span> Konoba Tovar · Zadar</span>
+      <span>Roštilj · peka · kruh ispod čripnje · sporo i pošteno</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  var hdr=document.getElementById('hdr');
+  function onScroll(){hdr.classList.toggle('solid',window.scrollY>60);}
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var mob=document.getElementById('mobile');
+  document.getElementById('burger').onclick=function(){mob.classList.add('open')};
+  document.getElementById('mclose').onclick=function(){mob.classList.remove('open')};
+  mob.querySelectorAll('a').forEach(function(a){a.onclick=function(){mob.classList.remove('open')}});
+
+  var cur=document.getElementById('cur');
+  if(window.matchMedia('(hover:hover)').matches && cur && window.gsap){
+    var qx=gsap.quickTo(cur,'x',{duration:.35,ease:'power3'}), qy=gsap.quickTo(cur,'y',{duration:.35,ease:'power3'});
+    window.addEventListener('mousemove',function(e){qx(e.clientX);qy(e.clientY)});
+    document.querySelectorAll('a,.btn,.burger,.gal a').forEach(function(el){
+      el.addEventListener('mouseenter',function(){cur.classList.add('big')});
+      el.addEventListener('mouseleave',function(){cur.classList.remove('big')});
+    });
+  }
+
+  if(window.Lenis && !reduce){
+    var lenis=new Lenis({lerp:0.2,wheelMultiplier:1,smoothWheel:true,syncTouch:false});
+    function raf(t){lenis.raf(t);requestAnimationFrame(raf);} requestAnimationFrame(raf);
+    if(window.ScrollTrigger){lenis.on('scroll',ScrollTrigger.update); gsap.ticker.add(function(t){lenis.raf(t*1000)}); gsap.ticker.lagSmoothing(0);}
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click',function(e){var id=a.getAttribute('href'); if(id.length>1){var t=document.querySelector(id); if(t){e.preventDefault(); lenis.scrollTo(t,{offset:-10});}}});
+    });
+  }
+
+  function splitWords(el){var w=el.textContent.split(' ');el.innerHTML=w.map(function(x){return '<span style="display:inline-block;overflow:hidden;vertical-align:top"><span style="display:inline-block">'+x+'</span></span>';}).join(' ');return el.querySelectorAll('span>span');}
+
+  var revealEls=document.querySelectorAll('[data-reveal],.reveal-clip');
+  function revealAll(){revealEls.forEach(function(el){el.classList.add('in');});}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
+  revealEls.forEach(function(el){if(reduce){el.classList.add('in');return;}io.observe(el);});
+  setTimeout(revealAll,2200); window.addEventListener('load',function(){setTimeout(revealAll,500);});
+
+  if(window.gsap && window.ScrollTrigger && !reduce){
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('[data-split]').forEach(function(el){
+      var s=splitWords(el); gsap.set(s,{yPercent:115});
+      gsap.to(s,{yPercent:0,duration:1,stagger:.08,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}});
+    });
+    document.querySelectorAll('.par').forEach(function(img){
+      gsap.fromTo(img,{yPercent:-6},{yPercent:6,ease:'none',scrollTrigger:{trigger:img,start:'top bottom',end:'bottom top',scrub:1}});
+    });
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      var end=+el.getAttribute('data-count'), deci=el.getAttribute('data-deci');
+      ScrollTrigger.create({trigger:el,start:'top 90%',once:true,onEnter:function(){
+        var o={v:0};gsap.to(o,{v:end,duration:1.3,ease:'power2.out',onUpdate:function(){el.textContent=deci?o.v.toFixed(1):Math.round(o.v);}});
+      }});
+    });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+Konoba Tovar — Zadar (Restorani i konobe)
+Arhetip: PRESET 5 — Heritage / rustika (topao, suzdržan registar)
+Karakter palete: zemljana terakota / slama / zadarski kamen / maslina — iz imena "Tovar" (magarac = simbol strpljenja stare Dalmacije)
+Display font: EB Garamond · Body: Work Sans · Hero: 4-image editorial "kronika" grid · grain overlay
+
+v3 (Heritage / Tovar): https://artme-nx.github.io/konoba-tovar-v3/
+GitHub repo: https://github.com/artme-nx/konoba-tovar-v3
+
+Status izrade: Gotovo (NEPROMIJENJEN — ovo je test)
+Izrađeno: 2026-06-30 · test (Impeccable + hospitality-web-builder)
+
+VAŽNO (napomena iz baze: "mačka umjesto tovar"): motiv tovara namjerno NIJE prikazan lažnom/krivom životinjom.
+Tovar je u COPY-ju i kao simbol; PRAVA fotografija tovara/konobe ostavljena je kao TODO[klijent] u kodu.
+Sve fotografije su privremene (stock) i provjerene da NISU geografski/sadržajno krive; klijent ih mijenja stvarnima.
+
+Napomena: nastavak numeracije (postojeće v1–v2 u Notionu). Mapa keyless iframe embed; bez ikakvog API ključa.
