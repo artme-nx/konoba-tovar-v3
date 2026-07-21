@@ -77,6 +77,11 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
+/* Lenis CSS (nedostajao) — bez ovoga nativni smooth re-animira svaki
+   Lenisov frame i scroll zapinje ili stane. */
+html.lenis{scroll-behavior:auto!important}
+html.lenis,html.lenis body{height:auto}
+html.lenis [data-lenis-prevent]{overscroll-behavior:contain}
 body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative}
 /* grain overlay (heritage texture) */
 body::after{content:"";position:fixed;inset:0;z-index:7000;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
